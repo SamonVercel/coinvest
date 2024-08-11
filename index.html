@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Invest in a wide variety of leading cryptos on CoinVest’s easy-to-use platform. Build connections and expand your knowledge alongside millions of other investors."
+    />
+    <meta
+      name="keywords"
+      content="CoinVest bitcoin ethereum solana ripple coin ctypto trading invest"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="Image/icon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CoinVest: The crypto trading platform trusted by millions</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1211799346681320");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1211799346681320&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body
+    class="text-white overflow-x-hidden w-full mode-color bg-slate-800"
+    id="body"
+  >
+    <!-- Header -->
+    <header
+      class="w-full absolute transition-all z-40 bg-slate-900 bg-opacity-85 mode-color"
+      id="header"
+    >
+      <nav
+        class="max-w-[1120px] flex justify-between m-auto items-center h-[70px] z-40 px-2"
+      >
+        <h1 class="text-3xl font-bold text-blue-500">CoinVest</h1>
+        <ul
+          id="menu"
+          class="flex font-bold gap-5 text-lg md:static fixed top-0 right-[-100%] transition-all md:h-auto h-[100vh] md:w-auto w-full md:flex-row flex-col md:bg-transparent bg-slate-800 z-50 p-3 mode-color"
+        >
+          <div class="flex justify-between">
+            <h1 class="text-3xl text-blue-500 font-bold md:hidden">CoinVest</h1>
+            <button id="close-btn" class="flex justify-end text-3xl md:hidden">
+              <ion-icon name="close"></ion-icon>
+            </button>
+          </div>
+          <li>Trade</li>
+          <li>Future</li>
+          <li>Learn</li>
+          <li>Business</li>
+        </ul>
+        <div class="flex items-center gap-6">
+          <button
+            id="mode"
+            class="text-xl w-14 py-1 px-2 rounded-xl flex justify-start items-center bg-gray-500 border border-gray-400"
+          >
+            <i id="mode-icon" class="fa-solid fa-moon"></i>
+          </button>
+          <div class="flex items-center rounded-xl">
+            <button
+              onclick="url()"
+              class="text-lg w-32 h-10 flex justify-center items-center hover:bg-blue-400 bg-blue-500 transition-all duration-500 text-white rounded-2xl border-gray-500 cursor-pointer"
+            >
+              Join Group
+            </button>
+          </div>
+          <button class="text-3xl md:hidden flex items-center" id="menu-btn">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-full absolute md:top-[170px] top-[100px]">
+      <!-- Heading  -->
+      <section class="max-x-[1120px] m-auto">
+        <h1
+          class="text-center max-w-[768px] m-auto text-5xl font-bold leading-[60px]"
+        >
+          The World’s Premier Crypto Trading Platform
+        </h1>
+        <p class="text-2xl text-center font-bold mt-6">
+          Buy Bitcoin, Ethereum, and 350+ cryptocurrencies
+        </p>
+        <div class="max-w-[300px] m-auto mt-10">
+          <img src="Image/phone.webp" class="" />
+        </div>
+      </section>
+
+      <!-- Coin price  -->
+      <section class="max-w-[900px] m-auto mt-14 px-2">
+        <h1
+          class="text-center max-w-[768px] m-auto text-5xl font-bold leading-[60px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          The World’s Premier Crypto Trading Platform
+        </h1>
+        <button
+          onclick="url()"
+          class="w-[240px] h-[50px] m-auto block rounded-[25px] border-2 border-gray-400 text-gray-400 mt-10 hover:bg-slate-900"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Check Crypto Prices
+        </button>
+
+        <div class="mt-16 text-sm">
+          <div
+            class="grid grid-cols-12 mt-3 gap-1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="sm:col-span-4 col-span-5 flex items-center gap-3">
+              <div class="max-w-10 min-w-7">
+                <img src="Image/btc.svg" alt="" />
+              </div>
+              <h2>Bitcoin <span class="text-gray-400 px-3">BTC</span></h2>
+            </div>
+            <div
+              class="sm:col-span-2 col-span-3 flex items-center price text-center"
+            ></div>
+            <div
+              class="col-span-2 flex items-center percent text-green-600 text-center"
+            ></div>
+            <div
+              class="col-span-2 sm:flex hidden items-center topprice text-center"
+            ></div>
+            <div class="col-span-2 items-center flex justify-end">
+              <button
+                onclick="url()"
+                class="bg-gray-300 text-black font-bold rounded-3xl w-16 h-8"
+              >
+                Trade
+              </button>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-12 mt-3 gap-1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="sm:col-span-4 col-span-5 flex items-center gap-3">
+              <div class="max-w-10 min-w-7">
+                <img src="Image/ethereum.svg" alt="" />
+              </div>
+              <h2>Ethereum <span class="text-gray-400 px-3">ETH</span></h2>
+            </div>
+            <div
+              class="sm:col-span-2 col-span-3 flex items-center price text-center"
+            ></div>
+            <div
+              class="col-span-2 flex items-center percent text-green-600 text-center"
+            ></div>
+            <div
+              class="col-span-2 sm:flex hidden items-center topprice text-center"
+            ></div>
+            <div class="col-span-2 items-center flex justify-end">
+              <button
+                onclick="url()"
+                class="bg-gray-300 text-black font-bold rounded-3xl w-16 h-8"
+              >
+                Trade
+              </button>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-12 mt-3 gap-1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="sm:col-span-4 col-span-5 flex items-center gap-3">
+              <div class="max-w-8 min-w-7">
+                <img src="Image/ada.png" alt="" />
+              </div>
+              <h2>Carnado <span class="text-gray-400 px-3">ADA</span></h2>
+            </div>
+            <div
+              class="sm:col-span-2 col-span-3 flex items-center price text-center"
+            ></div>
+            <div
+              class="col-span-2 flex items-center percent text-green-600 text-center"
+            ></div>
+            <div
+              class="col-span-2 sm:flex hidden items-center topprice text-center"
+            ></div>
+            <div class="col-span-2 items-center flex justify-end">
+              <button
+                onclick="url()"
+                class="bg-gray-300 text-black font-bold rounded-3xl w-16 h-8"
+              >
+                Trade
+              </button>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-12 mt-3 gap-1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="sm:col-span-4 col-span-5 flex items-center gap-3">
+              <div class="max-w-8 min-w-7">
+                <img src="Image/doge.png" alt="" />
+              </div>
+              <h2>Dogecoin <span class="text-gray-400 px-3">DOGE</span></h2>
+            </div>
+            <div
+              class="sm:col-span-2 col-span-3 flex items-center price text-center"
+            ></div>
+            <div
+              class="col-span-2 flex items-center percent text-green-600 text-center"
+            ></div>
+            <div
+              class="col-span-2 sm:flex hidden items-center topprice text-center"
+            ></div>
+            <div class="col-span-2 items-center flex justify-end">
+              <button
+                onclick="url()"
+                class="bg-gray-300 text-black font-bold rounded-3xl w-16 h-8"
+              >
+                Trade
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start your journey -->
+      <section class="max-w-[912px] m-auto mt-16 px-2">
+        <h1
+          class="text-center max-w-[768px] m-auto text-3xl font-bold leading-[60px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          The World’s Premier Crypto Trading Platform
+        </h1>
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-9">
+          <div class="">
+            <div
+              class="bg-blue-grideant rounded-3xl md:px-10 px-5 pt-10 flex items-stretch gap-5"
+            >
+              <div class="text">
+                <h2 class="text-blue-400 text-3xl font-bold">Buy crypto</h2>
+                <p class="text-2xl font-bold mt-4">
+                  Buy BTC, ETH, and other crypto easily via bank transfer.
+                </p>
+              </div>
+              <div class="max-w-[120px]">
+                <img src="Image/handphone.webp" alt="" />
+              </div>
+            </div>
+
+            <!-- Price Alerts -->
+            <div
+              class="bg-blue-grideant bg-blue-400 rounded-3xl md:px-10 px-5 py-8 flex flex-col items-stretch gap-5 mt-6"
+            >
+              <div class="text">
+                <h2 class="text-blue-400 text-3xl font-bold">Price Alerts</h2>
+                <p class="text-2xl font-bold mt-4">
+                  Be notified on BTC, ETH, XRP prices, and more.
+                </p>
+              </div>
+              <div class="text-sm">
+                <!-- Bitcoin2  -->
+                <div
+                  class="flex justify-between items-center border-b border-gray-600 border-opacity-50 py-5 hover:bg-[#1e3d70] rounded-lg px-1"
+                >
+                  <div class="flex gap-1 items-center">
+                    <img class="max-w-7" src="Image/btc.svg" alt="" />
+                    <div>
+                      <h3>Bitcoin</h3>
+                      <p class="text-xs text-gray-400">BTC</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="price2 md:text-sm text-lg">$61,403.61</h3>
+                    <p
+                      class="percent2 text-teal-500 text-end md:text-xs text-sm"
+                    >
+                      40%
+                    </p>
+                  </div>
+                </div>
+
+                <!--Ethereum2 -->
+                <div
+                  class="flex justify-between items-center border-b border-gray-600 border-opacity-50 py-5 hover:bg-[#1e3d70] rounded-lg px-1"
+                >
+                  <div class="flex gap-1 items-center">
+                    <img class="max-w-7" src="Image/ethereum.svg" alt="" />
+                    <div>
+                      <h3>Ethereum</h3>
+                      <p class="text-xs text-gray-400">ETH</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="price2 md:text-sm text-lg">$61,403.61</h3>
+                    <p
+                      class="percent2 text-teal-500 text-end md:text-xs text-sm"
+                    >
+                      40%
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Carnado2 -->
+                <div
+                  class="flex justify-between items-center border-b border-gray-600 border-opacity-50 py-5 hover:bg-[#1e3d70] rounded-lg px-1"
+                >
+                  <div class="flex gap-1 items-center">
+                    <img class="max-w-7" src="Image/ada.png" alt="" />
+                    <div>
+                      <h3>Carnado</h3>
+                      <p class="text-xs text-gray-400">ADA</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="price2 md:text-sm text-lg">$61,403.61</h3>
+                    <p
+                      class="percent2 text-teal-500 text-end md:text-xs text-sm"
+                    >
+                      40%
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Doge2 -->
+                <div
+                  class="flex justify-between items-center border-b border-gray-600 border-opacity-50 py-5 hover:bg-[#1e3d70] rounded-lg px-1"
+                >
+                  <div class="flex gap-1 items-center">
+                    <img class="max-w-7" src="Image/doge.png" alt="" />
+                    <div>
+                      <h3>Dogecoin</h3>
+                      <p class="text-xs text-gray-400">DOGE</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="price2 md:text-sm text-lg">$61,403.61</h3>
+                    <p
+                      class="percent2 text-teal-500 text-end md:text-xs text-sm"
+                    >
+                      40%
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Doge2 -->
+                <div
+                  class="flex justify-between items-center border-gray-600 border-opacity-50 py-5 hover:bg-[#1e3d70] rounded-lg px-1"
+                >
+                  <div class="flex gap-1 items-center">
+                    <img class="max-w-7" src="Image/cronos.png" alt="" />
+                    <div>
+                      <h3>Cronos</h3>
+                      <p class="text-xs text-gray-400">CRO</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="price2 md:text-sm text-lg">$61,403.61</h3>
+                    <p
+                      class="percent2 text-teal-500 text-end md:text-xs text-sm"
+                    >
+                      40%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right  -->
+          <div>
+            <!-- Recurring  -->
+            <div
+              class="bg-blue-grideant bg-blue-400 rounded-3xl md:px-10 px-5 pt-6 flex flex-col items-stretch gap-5"
+            >
+              <div class="text">
+                <h2 class="text-blue-400 text-3xl font-bold">Recurring Buy</h2>
+                <p class="text-xl font-bold mt-4">
+                  Grow your portfolio automatically with daily, weekly, or
+                  monthly trades.
+                </p>
+              </div>
+              <div class="max-h-[]">
+                <img src="Image/calender.webp" alt="" />
+              </div>
+            </div>
+            <!-- On chain -->
+            <div
+              class="bg-blue-grideant bg-blue-400 rounded-3xl md:px-10 px-5 py-6 flex items-stretch gap-5 mt-6"
+            >
+              <div class="text">
+                <h2 class="text-blue-400 text-3xl font-bold">
+                  On-chain Staking
+                </h2>
+                <p class="text-xl font-bold mt-4">
+                  Generate passive income by helping to secure blockchains.
+                </p>
+              </div>
+              <div class="max-w-[160px]">
+                <img src="Image/coin-3.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join us -->
+      <section class="px-2">
+        <section
+          class="max-w-[912px] m-auto mt-10 rounded-3xl bg-white text-black md:p-10 p-5 flex items-start justify-between gap-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div>
+            <p class="text-gray-400 text-xl font-bold">
+              Join our
+              <span class="text-3xl font-bold text-blue-400">1M+ users</span>
+            </p>
+            <h2 class="text-3xl font-bold">Get started today</h2>
+          </div>
+          <div class="flex gap-4 items-end sm:flexrow flex-col">
+            <p class="text-xl font-bold">
+              <span class="text-blue-400">Scan</span> to join us
+            </p>
+            <img class="max-w-[80px]" src="Image/qr-code.png" alt="" />
+          </div>
+        </section>
+      </section>
+
+      <!-- Why cryptocurrencies -->
+      <section class="max-w-[920px] m-auto mt-16 rounded-3xl px-2">
+        <h2
+          class="text-3xl font-bold text-blue-400"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Why Trade Cryptocurrencies?
+        </h2>
+        <p
+          class="mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Cryptocurrencies have emerged as a new frontier in the financial
+          world, offering a plethora of unique advantages that make them an
+          attractive asset class for traders. Here's why:
+        </p>
+        <div
+          class="md:grid flex flex-col-reverse md:grid-cols-12 gap-5 mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div class="md:col-span-4 md:px-0 px-10">
+            <img src="Image/poster1.jpg" alt="" />
+          </div>
+          <div class="md:col-span-8">
+            <h2 class="text-xl font-bold">Liquidity:</h2>
+            <p class="mt-3">
+              Liquidity refers to how quickly and easily an asset can be bought
+              or sold without causing a significant price movement. High
+              liquidity makes it easier to trade an asset and reduces the risks
+              of price manipulation. Cryptocurrencies, especially the more
+              popular ones like Bitcoin and Ethereum, have high liquidity due to
+              their widespread adoption and large trading volumes.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:grid flex flex-col-reverse md:grid-cols-12 gap-5 mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div class="md:col-span-4 md:px-0 px-10">
+            <img src="Image/poster2.jpg" alt="" />
+          </div>
+          <div class="md:col-span-8">
+            <h2 class="text-xl font-bold">Strong Trends:</h2>
+            <p class="mt-3">
+              Cryptocurrencies often exhibit strong trends. A trend is the
+              general direction which a market is moving over a specific period.
+              These strong trends, when identified correctly, can provide
+              traders with significant opportunities to profit.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:grid flex flex-col-reverse md:grid-cols-12 gap-5 mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div class="md:col-span-4 md:px-0 px-10">
+            <img src="Image/poster3.jpg" alt="" />
+          </div>
+          <div class="md:col-span-8">
+            <h2 class="text-xl font-bold">Wide Daily Trading Ranges:</h2>
+            <p class="mt-3">
+              Cryptocurrencies are known for their price volatility, which means
+              they can have wide daily trading ranges. This volatility can
+              present opportunities for traders to profit from large price
+              movements.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:grid flex flex-col-reverse md:grid-cols-12 gap-5 mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div class="md:col-span-4 md:px-0 px-10">
+            <img src="Image/poster4.png" alt="" />
+          </div>
+          <div class="md:col-span-8">
+            <h2 class="text-xl font-bold">Vast News Coverage:</h2>
+            <p class="mt-3">
+              Cryptocurrencies receive a lot of media attention, which can often
+              influence their price. Traders who stay informed about
+              cryptocurrency news can potentially predict these price movements
+              and make profitable trades.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:grid flex flex-col-reverse md:grid-cols-12 gap-5 mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div class="md:col-span-4 md:px-0 px-10">
+            <img src="Image/poster5.jpg" alt="" />
+          </div>
+          <div class="md:col-span-8">
+            <h2 class="text-xl font-bold">24/7 Market:</h2>
+            <p class="mt-3">
+              Unlike traditional financial markets, which have set trading
+              hours, the cryptocurrency market is open 24/7. This means you can
+              trade at any time that suits you, providing flexibility that other
+              markets can't match.
+            </p>
+          </div>
+        </div>
+        <div
+          class="md:grid flex flex-col-reverse md:grid-cols-12 gap-5 mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <div class="md:col-span-4 md:px-0 px-10">
+            <img src="Image/poster6.webp" alt="" />
+          </div>
+          <div class="md:col-span-8">
+            <h2 class="text-xl font-bold">Innovative Technology:</h2>
+            <p class="mt-3">
+              ocurrencies allows you to be part of this exciting new field and
+              potentially profit from technological advancements.
+            </p>
+          </div>
+        </div>
+        <p
+          class="mt-4"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          In conclusion, the unique characteristics of cryptocurrencies make
+          them an exciting and potentially profitable market for traders.
+        </p>
+      </section>
+
+      <!-- Why trade whith Us -->
+      <section class="px-2 max-w-[920px] m-auto mt-16">
+        <h2
+          class="text-3xl text-blue-400 font-bold"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Why trade with us ?
+        </h2>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-5 mt-4">
+          <div
+            class="bg-blue-grideant rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="md:max-h-[150px] overflow-hidden">
+              <img src="Image/teamwork2.jpg" alt="" />
+            </div>
+            <div class="p-2">
+              <h2 class="text-lg font-bold">
+                Comprehensive Educational Resources:
+              </h2>
+              <p class="mt-3 text-sm">
+                Our Education Centre is packed with resources designed to
+                enhance your cryptocurrency trading knowledge and skills. Learn
+                about the unique characteristics of different cryptocurrencies
+                and discover effective trading strategies.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-blue-grideant rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="md:max-h-[150px] overflow-hidden">
+              <img src="Image/teamwork1.jpg" alt="" />
+            </div>
+            <div class="p-2">
+              <h2 class="text-lg font-bold">Global Regulation:</h2>
+              <p class="mt-3 text-sm">
+                coinvest is licensed and regulated in multiple prominent
+                jurisdictions worldwide. This means you can trade
+                cryptocurrencies with the utmost confidence, knowing you're
+                partnering with a reputable and regulated broker.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-blue-grideant rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <div class="md:max-h-[150px] overflow-hidden">
+              <img src="Image/teamwork3.jpg" alt="" />
+            </div>
+            <div class="p-2">
+              <h2 class="text-lg font-bold">Multiple Trading Platforms:</h2>
+              <p class="mt-3 text-sm">
+                Experience the versatility of trading cryptocurrencies across
+                our range of user-friendly platforms, including MT4, MT5 and
+                WebTrader.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="py-12 border-t border-slate-500 border-opacity-40 mt-20 px-2"
+      >
+        <div class="max-w-[1120px] m-auto">
+          <div
+            class="flex justifybetweeen sm:flex-row flex-col sm:items-center items-start gap-3"
+          >
+            <div class="text-3xl font-bold">CoinVest</div>
+            <div
+              class="border-b border-slate-500 border-opacity-40 w-full"
+            ></div>
+            <div class="flex gap-1 items-center">
+              <div
+                class="text-2xl border border-slate-500 border-opacity-40 rounded-full w-10 h-10 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div
+                class="text-2xl border border-slate-500 border-opacity-40 rounded-full w-10 h-10 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div
+                class="text-2xl border border-slate-500 border-opacity-40 rounded-full w-10 h-10 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div
+                class="text-2xl border border-slate-500 border-opacity-40 rounded-full w-10 h-10 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div
+                class="text-2xl border border-slate-500 border-opacity-40 rounded-full w-10 h-10 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col gap-6 justify-between pt-10">
+            <p class="max-w-[800px] md:text-xs text-sm">
+              The purpose of this website is solely to display information
+              regarding the products and services available on the CoinVest. It
+              is not intended to offer access to any of such products and
+              services. You may obtain access to such products and services on
+              the CoinVest. <br /><br />
+              Please note that the availability of the products and services on
+              the CoinVest is subject to jurisdictional limitations. CoinVest
+              may not offer certain products, features and/or services on the
+              CoinVest in certain jurisdictions due to potential or actual
+              regulatory restrictions.
+            </p>
+            <div class="grid grid-cols-3 max-w-[200px] gap-2">
+              <img src="Image/AICPA.webp" alt="" />
+              <img src="Image/SGS27701.webp" alt="" />
+              <img src="Image/SGS27701.webp" alt="" />
+              <img src="Image/PCI.webp" alt="" />
+            </div>
+          </div>
+          <div
+            class="border-t border-slate-500 border-opacity-40 pt-8 mt-10 md:text-xs text-sm"
+          >
+            Copyright © 2018 - 2024 CoinVest. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

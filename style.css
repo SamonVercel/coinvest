@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+}
+:root {
+  --swiper-navigation-size: 25px;
+  /* --swiper-theme-color: white; */
+}
+
+.today-coin {
+  background: linear-gradient(to right, #090f51, #122a91, #090f51);
+}
+
+.upDown.rotate {
+  rotate: 180deg;
+}
+
+#header.stick {
+  position: sticky;
+}
+
+.bg-blue-grideant {
+  background: linear-gradient(to bottom, #002a59, #013266, #002a59);
+}
+
+.bg-blue-grideant.light {
+  background: #ebebebd9;
+}
+
+@keyframes buysellanimate {
+  0% {
+    transform: translateY(-90%);
+  }
+  15% {
+    transform: translateY(-65%);
+  }
+  30% {
+    transform: translateY(-65%);
+  }
+  45% {
+    transform: translateY(-30%);
+  }
+  60% {
+    transform: translateY(-30%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
+
+.text-focus {
+  font-size: 16px;
+}
+
+.percent.red {
+  color: rgb(212, 56, 56);
+}
+
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 90%;
+  }
+  .text-focus {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+  .text-focus {
+    font-size: 16px;
+  }
+  #menu.show {
+    position: fixed;
+    right: 0;
+  }
+}
